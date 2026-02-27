@@ -1,98 +1,100 @@
-\# 🛡 SOC Phishing Attack Detection Lab
+# 🛡 SOC Home Lab – Phishing Attack Simulation & Detection
 
+## 📌 Project Overview
+This project simulates a **real-world phishing attack** in a controlled SOC home lab environment.  
+The objective is to **detect, analyze, and report malicious activity** using Sysmon and Splunk, while mapping findings to the **MITRE ATT&CK framework**.
 
+The lab environment consists of three virtual machines:
 
-This project demonstrates an \*\*end-to-end phishing attack simulation\*\* and analysis from a SOC perspective.  
-
-The lab environment consists of \*\*attacker (Kali Linux)\*\*, \*\*victim (Windows 10)\*\*, and \*\*SIEM (Splunk)\*\* machines.
-
-
-
----
-
-
-
-\## 📂 Repository Structure
-
-
-
-\- `01-Architecture/` → Lab architecture and network diagram  
-
-\- `02-Attack-Simulation/` → Phishing scenario and Gophish configuration  
-
-\- `03-Log-Collection/` → Sysmon logs and Splunk forwarding  
-
-\- `04-Detection-Analysis/` → Detection queries, IOC extraction, MITRE mapping  
-
-\- `05-Incident-Timeline/` → Timeline of the incident  
-
-\- `06-Impact-Response/` → Risk assessment and containment actions  
-
-\- `07-Incident-Report/` → Professional incident report  
-
-\- `screenshots/` → Screenshots and visual evidence  
-
-
+- 🐉 **Kali Linux (Attacker – GoPhish)**  
+- 🐧 **Ubuntu Server (SIEM – Splunk Enterprise)**  
+- 🪟 **Windows 10 (Victim – Sysmon + Universal Forwarder)**  
 
 ---
 
+## 📚 Contents
 
-
-\## 🌐 Lab Network Overview
-
-
-
-\- \*\*Attacker (Kali Linux)\*\* – `192.168.1.106`  
-
-\- \*\*Victim (Windows 10)\*\* – `192.168.1.108`  
-
-\- \*\*SIEM (Splunk, Ubuntu Server)\*\* – `192.168.1.102`  
-
-
-
-For the network setup and log flow, see the \[network diagram](01-Architecture/network-diagram.png).
-
-
+- [Introduction](#introduction)  
+- [Lab Architecture](#lab-architecture)  
+- [Attack Scenario](#attack-scenario)  
+- [Log Collection & Analysis](#log-collection--analysis)  
+- [MITRE ATT&CK Mapping](#mitre-attack-mapping)  
+- [Indicators of Compromise (IOCs)](#indicators-of-compromise-iocs)  
+- [Incident Timeline](#incident-timeline)  
+- [Final Incident Report](#final-incident-report)  
 
 ---
 
-
-
-\## 🔗 Important Links
-
-
-
-\- \[Scenario Description](02-Attack-Simulation/scenario-description.md)  
-
-\- \[Sysmon Configuration](03-Log-Collection/sysmon-configuration.md)  
-
-\- \[Detection Logic \& MITRE Mapping](04-Detection-Analysis/detection-logic.md)  
-
-\- \[Final Incident Report](07-Incident-Report/final-incident-report.md)  
-
-
+## Introduction
+This document provides a step-by-step simulation of a phishing attack scenario.  
+The goal is to demonstrate **SOC-level detection**, **log analysis**, and **incident reporting** capabilities.
 
 ---
 
+## Lab Architecture
+The lab environment was built using VirtualBox and consists of:
 
+- **Kali Linux** – Attacker machine  
+- **Windows 10** – Victim machine with Sysmon & Universal Forwarder  
+- **Ubuntu Server** – SIEM running Splunk Enterprise  
 
-\## 🎯 Project Objectives
-
-
-
-1\. Create a realistic phishing scenario  
-
-2\. Collect and analyze endpoint logs  
-
-3\. Perform SOC-level detection and IOC extraction  
-
-4\. Produce a professional incident report
-
-
+All logs from the Windows machine are forwarded to Splunk for real-time monitoring and analysis.  
+For the full network overview, see the [network diagram](01-Architecture/network-diagram.png).
 
 ---
 
+## Attack Scenario
+A phishing email was sent to the victim machine using **GoPhish**.  
+The victim interacted with the malicious content, which triggered suspicious activities logged by **Sysmon**:
 
+- Process creation  
+- Network connections  
+- File modifications  
 
-> This lab serves as a \*\*practical portfolio project\*\* for SOC analysts.
+---
 
+## Log Collection & Analysis
+- **Log Source:** Sysmon (Windows 10)  
+- **SIEM:** Splunk Enterprise  
+- **Event IDs analyzed:** 1 (Process Creation), 3 (Network Connection), 11 (File Creation)  
+- **Detection:** Custom SPL queries in Splunk were used to detect abnormal behavior and potential threats.
+
+---
+
+## MITRE ATT&CK Mapping
+The observed techniques were mapped to MITRE ATT&CK:
+
+- **T1566.001 – Phishing**  
+- **T1059.001 – PowerShell**  
+- **T1071 – Application Layer Protocol**  
+
+---
+
+## Indicators of Compromise (IOCs)
+Extracted IOCs include:
+
+- Malicious IP addresses  
+- Suspicious process execution  
+- Abnormal network connections  
+
+---
+
+## Incident Timeline
+A detailed attack timeline was created, documenting each stage from initial access to detection.  
+
+- Email delivery → User click → Malicious payload execution → Sysmon log capture → Splunk alert → IOC extraction  
+
+---
+
+## Final Incident Report
+A professional incident report was prepared including:
+
+- Executive Summary  
+- Technical Analysis  
+- MITRE Mapping  
+- IOC List  
+- Remediation Recommendations  
+
+---
+
+> This lab serves as a **practical portfolio project** for SOC analysts and demonstrates real-world phishing attack detection and incident response workflow.
