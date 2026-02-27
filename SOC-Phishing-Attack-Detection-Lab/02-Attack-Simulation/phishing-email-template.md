@@ -19,7 +19,7 @@ The email is designed to imitate a corporate IT password reset notification to s
 
 The following HTML template was used in the Gophish campaign:
 
-
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,7 +55,7 @@ The following HTML template was used in the Gophish campaign:
     </div>
 </body>
 </html>
-
+```
 ---
 
 ## 3. Dynamic Variables Used
@@ -90,3 +90,4 @@ When the victim clicks the phishing button:
 4. SOC detection and correlation analysis begin  
 
 ---
+
