@@ -1,17 +1,17 @@
 # Phishing Email Template
 
-This document describes the phishing email template used in the SOC Phishing Attack Simulation.
+This document describes the phishing email template used in the SOC Phishing Attack Simulation Lab.
 
-The email is designed to imitate a corporate IT password reset notification in order to simulate a realistic credential harvesting attack.
+The email is designed to imitate a corporate IT password reset notification to simulate a realistic credential harvesting attack, including end-to-end monitoring and detection using Sysmon and Splunk.
 
 ---
 
 ## 1. Attack Type
 
-- **Category:** Phishing (Credential Harvesting)
-- **Theme:** Password Reset Notification
-- **Impersonation:** Corporate IT Security Department
-- **User Interaction Required:** Yes
+- **Category:** Phishing (Credential Harvesting)  
+- **Theme:** Password Reset Notification  
+- **Impersonation:** Corporate IT Security Department  
+- **User Interaction Required:** Yes  
 
 ---
 
@@ -19,7 +19,7 @@ The email is designed to imitate a corporate IT password reset notification in o
 
 The following HTML template was used in the Gophish campaign:
 
-```html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,3 +58,35 @@ The following HTML template was used in the Gophish campaign:
 
 ---
 
+## 3. Dynamic Variables Used
+
+The template includes Gophish dynamic placeholders:
+
+- `{{.FirstName}}` → Personalizes the email for the target user  
+- `{{.URL}}` → Automatically replaced with the unique phishing tracking link  
+
+These dynamic variables increase realism and improve click-through likelihood.
+
+---
+
+## 4. Social Engineering Techniques Used
+
+This email leverages common phishing tactics:
+
+- **Authority Impersonation:** Posing as corporate IT Security  
+- **Urgency:** Limited-time (30 minutes) reset link  
+- **Legitimacy Signals:** Professional design and corporate-style branding  
+- **Personalization:** Addressing the user by first name  
+
+---
+
+## 5. Expected Technical Artifacts
+
+When the victim clicks the phishing button:
+
+1. The browser initiates an HTTP connection to the attacker-controlled host  
+2. Sysmon logs a **Network Connection event (Event ID 3)**  
+3. Logs are forwarded to Splunk via Universal Forwarder  
+4. SOC detection and correlation analysis begin  
+
+---
