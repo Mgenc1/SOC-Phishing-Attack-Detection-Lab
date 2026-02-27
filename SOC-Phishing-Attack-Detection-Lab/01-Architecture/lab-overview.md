@@ -14,7 +14,7 @@ The lab consists of **three virtual machines**, each serving a specific role:
    - IP Address: `192.168.1.106`
    - Responsible for sending malicious emails and hosting phishing landing pages.
 
-2. **Victim Machine – Windows 10**
+2. **Victim Machine – Windows 11**
    - Runs **Sysmon** and **Universal Forwarder** to generate and forward logs.
    - IP Address: `192.168.1.108`
    - Represents the end-user targeted by phishing attacks.
@@ -49,3 +49,4 @@ You can view the lab network diagram here: [network-diagram.png](network-diagram
 ---
 
 > This lab is designed for **SOC analysts, cybersecurity students, and security enthusiasts** to practice end-to-end phishing detection and incident response.
+
