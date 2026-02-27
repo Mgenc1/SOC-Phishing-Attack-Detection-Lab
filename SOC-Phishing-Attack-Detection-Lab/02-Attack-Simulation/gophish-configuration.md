@@ -15,7 +15,7 @@ It focuses on **campaign creation, email template setup, and testing**.
 ## 2. Sending Profile
 
 - Use lab-configured SMTP or default Gophish profile  
-- From Address: `admin@lab.local`  
+- From Address: `lab-test-account@gmail.com`  
 - Immediate launch for realistic simulation  
 
 ## 3. Testing & Verification
@@ -27,3 +27,4 @@ It focuses on **campaign creation, email template setup, and testing**.
 ## 4. References
 
 - For installation and detailed setup, see [Gophish Official Guide](https://github.com/gophish/gophish)
+
