@@ -1,4 +1,4 @@
-# 🛡 SOC Home Lab – Phishing Attack Simulation & Detection
+# 🛡 SOC-Phishing-Attack-Detection-Lab
 
 ## 📌 Project Overview
 This lab demonstrates a **full SOC incident workflow** in a home lab phishing attack scenario.  
