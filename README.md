@@ -29,9 +29,9 @@ The lab environment consists of three virtual machines:
 
 ---
 
-# SOC-Phishing-Attack-Detection-Lab
+[SOC-Phishing-Attack-Detection-Lab](SOC-Phishing-Attack-Detection-Lab)
 
-[01-Architecture](01-Architecture/)
+[01-Architecture](SOC-Phishing-Attack-Detection-Lab/01-Architecture/)
 - [01.01 Lab Overview](01-Architecture/01.01-lab-overview.md)
 - [01.02 Network Diagram](01-Architecture/01.02-network-diagram.png)
 
