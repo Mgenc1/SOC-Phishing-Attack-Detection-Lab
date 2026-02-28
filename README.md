@@ -29,72 +29,70 @@ The lab environment consists of three virtual machines:
 
 ---
 
-# SOC-Phishing-Attack-Detection-Lab
-
 Contents
-Introduction (Not: Buraya ana README başlığınıza bir çapa linki verebilirsiniz)
+Introduction
 
 01-Architecture
 
-1. Lab Overview
+1.1 Lab Overview
 
-2. Network Diagram
+1.2 Network Diagram
 
 02-Attack-Simulation
 
-1. Scenario Description
+2.1 Scenario Description
 
-2. Gophish Configuration
+2.2 Gophish Configuration
 
-3. Phishing Email Template
+2.3 Phishing Email Template
 
 03-Log-Collection
 
-1. Sysmon Configuration
+3.1 Sysmon Configuration
 
-2. Windows Event Analysis
+3.2 Windows Event Analysis
 
-3. Log Forwarding to Splunk
+3.3 Log Forwarding to Splunk
 
 04-Detection-Analysis
 
-1. Splunk Search Queries
+4.1 Splunk Search Queries
 
-2. Detection Logic
+4.2 Detection Logic
 
-3. IOC Extraction
+4.3 IOC Extraction
 
-4. MITRE Mapping
+4.4 MITRE Mapping
 
 05-Incident-Timeline
 
-1. Timeline Analysis
+5.1 Timeline Analysis
 
 06-Impact-Response
 
-1. Impact Assessment
+6.1 Impact Assessment
 
-2. Containment Actions
+6.2 Containment Actions
 
-3. Lessons Learned
+6.3 Lessons Learned
 
 07-Incident-Report
 
-1. Final Incident Report
+7.1 Final Incident Report
 
 08-Screenshots
 
-1. VirtualBox Lab Overview
+8.1 VirtualBox Lab Overview
 
-2. Ubuntu Server - Splunk
+8.2 Ubuntu Server - Splunk
 
-3. Kali - Gophish
+8.3 Kali - Gophish
 
-4. Thunderbird Mail
+8.4 Thunderbird Mail
 
-5. Phishing Page
+8.5 Phishing Page
 
-6. Event 3 - Splunk Web
+8.6 Event 3 - Splunk Web
 ---
 
 > This lab demonstrates a **realistic SOC incident workflow**, from phishing attack simulation to professional incident reporting, and is suitable for portfolio purposes.
