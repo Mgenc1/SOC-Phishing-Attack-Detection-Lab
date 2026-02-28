@@ -31,45 +31,70 @@ The lab environment consists of three virtual machines:
 
 # SOC-Phishing-Attack-Detection-Lab
 
-## [01-Architecture](01-Architecture/)
-- [01.01 Lab Overview](01-Architecture/01.01-lab-overview.md)
-- [01.02 Network Diagram](01-Architecture/01.02-network-diagram.png)
+Contents
+Introduction (Not: Buraya ana README başlığınıza bir çapa linki verebilirsiniz)
 
-## [02-Attack-Simulation](02-Attack-Simulation/)
-- [02.01 Scenario Description](02-Attack-Simulation/02.01-scenario-description.md)
-- [02.02 Gophish Configuration](02-Attack-Simulation/02.02-gophish-configuration.md)
-- [02.03 Phishing Email Template](02-Attack-Simulation/02.03-phishing-email-template.md)
+01-Architecture
 
-## [03-Log-Collection](03-Log-Collection/)
-- [03.01 Sysmon Configuration](03-Log-Collection/03.01-sysmon-configuration.md)
-- [03.02 Windows Event Analysis](03-Log-Collection/03.02-windows-event-analysis.md)
-- [03.03 Log Forwarding to Splunk](03-Log-Collection/03.03-log-forwarding-to-splunk.md)
+1. Lab Overview
 
-## [04-Detection-Analysis](04-Detection-Analysis/)
-- [04.01 Splunk Search Queries](04-Detection-Analysis/04.01-splunk-search-queries.md)
-- [04.02 Detection Logic](04-Detection-Analysis/04.02-detection-logic.md)
-- [04.03 IOC Extraction](04-Detection-Analysis/04.03-ioc-extraction.md)
-- [04.04 MITRE Mapping](04-Detection-Analysis/04.04-mitre-mapping.md)
+2. Network Diagram
 
-## [05-Incident-Timeline](05-Incident-Timeline/)
-- [Timeline Analysis](05-Incident-Timeline/timeline-analysis.md)
+02-Attack-Simulation
 
-## [06-Impact-Response](06-Impact-Response/)
-- [06.01 Impact Assessment](06-Impact-Response/06.01-impact-assessment.md)
-- [06.02 Containment Actions](06-Impact-Response/06.02-containment-actions.md)
-- [06.03 Lessons Learned](06-Impact-Response/06.03-lessons-learned.md)
+1. Scenario Description
 
-## [07-Incident-Report](07-Incident-Report/)
-- [Final Incident Report](07-Incident-Report/final-incident-report.md)
+2. Gophish Configuration
 
-## [08-Screenshots](08-Screenshots/)
-- [VirtualBox Lab Overview](08-Screenshots/1.virtualbox-lab-overview.png)
-- [Ubuntu Server - Splunk](08-Screenshots/2.ubuntu-server-splunk.png)
-- [Kali - Gophish](08-Screenshots/3.kali-gophish.png)
-- [Thunderbird Mail](08-Screenshots/4.thunderbird-mail.png)
-- [Phishing Page](08-Screenshots/5.phishing-page.png)
-- [Event 3 - Splunk Web](08-Screenshots/6.event3-web.png)
+3. Phishing Email Template
 
+03-Log-Collection
+
+1. Sysmon Configuration
+
+2. Windows Event Analysis
+
+3. Log Forwarding to Splunk
+
+04-Detection-Analysis
+
+1. Splunk Search Queries
+
+2. Detection Logic
+
+3. IOC Extraction
+
+4. MITRE Mapping
+
+05-Incident-Timeline
+
+1. Timeline Analysis
+
+06-Impact-Response
+
+1. Impact Assessment
+
+2. Containment Actions
+
+3. Lessons Learned
+
+07-Incident-Report
+
+1. Final Incident Report
+
+08-Screenshots
+
+1. VirtualBox Lab Overview
+
+2. Ubuntu Server - Splunk
+
+3. Kali - Gophish
+
+4. Thunderbird Mail
+
+5. Phishing Page
+
+6. Event 3 - Splunk Web
 ---
 
 > This lab demonstrates a **realistic SOC incident workflow**, from phishing attack simulation to professional incident reporting, and is suitable for portfolio purposes.
