@@ -8,7 +8,7 @@ The timeline is based on Sysmon logs collected from the Windows workstation (`um
 ## Event Timeline
 
 ### 1️. Process Creation – System Operations
-**Timestamp:** 02/26/2026 11:34:36 PM  
+**Timestamp:** 02/26/2026 10:38:58.452 PM  
 **EventCode:** 1 – Process Creation  
 **Process:** `C:\Windows\System32\MpSigStub.exe`  
 **User:** NT AUTHORITY\SYSTEM  
@@ -24,7 +24,7 @@ No user interaction required for these events.
 ---
 
 ### 2️. User Clicked Phishing Link
-**Timestamp:** 02/26/2026 11:35:10 PM  
+**Timestamp:** 02/26/2026 10:39:46.296 PM  
 **EventCode:** 3 – Network Connection Detected  
 **Process:** `C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe`  
 **User:** UMUT\User  
@@ -39,7 +39,7 @@ No user interaction required for these events.
 ---
 
 ### 3️. Process Termination
-**Timestamp:** 02/26/2026 11:36:15 PM  
+**Timestamp:** 02/26/2026 10:40:15.340 PM  
 **EventCode:** 5 – Process Terminated  
 **Process:** `C:\Windows\System32\dllhost.exe`  
 **Parent Process:** `C:\Windows\UUS\Packages\Preview\amd64\wuaucltcore.exe`  
@@ -53,14 +53,14 @@ No user interaction required for these events.
 
 ## Timeline Summary
 
-| Time (PM)       | EventCode | Event Type                  | Process / Action                               | Notes                                           |
+| Time (PM)       | EventCode | Event Type                  | Process / Action                              | Notes                                          |
 |-----------------|-----------|-----------------------------|-----------------------------------------------|------------------------------------------------|
-| 11:34:36        | 1         | Process Creation            | MpSigStub.exe                                 | Windows update/malware protection process     |
-| 11:35:10        | 3         | Network Connection Detected | msedge.exe → 192.168.1.106                   | Phishing link click detected                   |
-| 11:36:15        | 5         | Process Termination         | dllhost.exe                                   | Normal process termination                     |
+| 10:38:58        | 1         | Process Creation            | MpSigStub.exe                                 | Windows update/malware protection process      |
+| 10:39:46        | 3         | Network Connection Detected | msedge.exe → 192.168.1.106                    | Phishing link click detected                   |
+| 10:40:15        | 5         | Process Termination         | dllhost.exe                                   | Normal process termination                     |
 
 **Key Takeaways:**  
-- User interaction confirmed at 11:35:10 PM via Sysmon Event ID 3.  
+- User interaction confirmed at 10:39:46 PM via Sysmon Event ID 3.  
 - No payload execution, reverse shell, or lateral movement observed.  
 - Timeline aligns with early-stage SOC detection for phishing events.
 
@@ -71,4 +71,5 @@ No user interaction required for these events.
 - Focus: Initial Access detection and user-driven network activity.  
 - Detection Artifact: Sysmon Event ID 3 provides primary evidence of the click.  
 - SOC Monitoring: Track user-initiated outbound web traffic, correlate with email delivery time.
+
 
