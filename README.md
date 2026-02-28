@@ -62,13 +62,13 @@ The lab environment consists of three virtual machines:
 [07-Incident-Report](SOC-Phishing-Attack-Detection-Lab/07-Incident-Report/)
 - [Final Incident Report](SOC-Phishing-Attack-Detection-Lab/07-Incident-Report/final-incident-report.md)
 
-[08-Screenshots](SOC-Phishing-Attack-Detection-Lab/08-Screenshots/)
-- [VirtualBox Lab Overview](SOC-Phishing-Attack-Detection-Lab/08-Screenshots/1.virtualbox-lab-overview.png)
-- [Ubuntu Server - Splunk](SOC-Phishing-Attack-Detection-Lab/08-Screenshots/2.ubuntu-server-splunk.png)
-- [Kali - Gophish](SOC-Phishing-Attack-Detection-Lab/08-Screenshots/3.kali-gophish.png)
-- [Thunderbird Mail](SOC-Phishing-Attack-Detection-Lab/08-Screenshots/4.thunderbird-mail.png)
-- [Phishing Page](SOC-Phishing-Attack-Detection-Lab/08-Screenshots/5.phishing-page.png)
-- [Event 3 - Splunk Web](SOC-Phishing-Attack-Detection-Lab/08-Screenshots/6.event3-web.png)
+[08-screenshots](SOC-Phishing-Attack-Detection-Lab/08-screenshots/)
+- [VirtualBox Lab Overview](SOC-Phishing-Attack-Detection-Lab/08-screenshots/1.virtualbox-lab-overview.png)
+- [Ubuntu Server - Splunk](SOC-Phishing-Attack-Detection-Lab/08-screenshots/2.ubuntu-server-splunk.png)
+- [Kali - Gophish](SOC-Phishing-Attack-Detection-Lab/08-screenshots/3.kali-gophish.png)
+- [Thunderbird Mail](SOC-Phishing-Attack-Detection-Lab/08-screenshots/4.thunderbird-mail.png)
+- [Phishing Page](SOC-Phishing-Attack-Detection-Lab/08-screenshots/5.phishing-page.png)
+- [Event 3 - Splunk Web](SOC-Phishing-Attack-Detection-Lab/08-screenshots/6.event3-web.png)
 ---
 
 > This lab demonstrates a **realistic SOC incident workflow**, from phishing attack simulation to professional incident reporting, and is suitable for portfolio purposes.
