@@ -8,7 +8,7 @@ The lab environment consists of three virtual machines:
 
 - 🐉 **Kali Linux (Attacker – GoPhish)**  
 - 🐧 **Ubuntu Server (SIEM – Splunk Enterprise)**  
-- 🪟 **Windows 10 (Victim – Sysmon + Universal Forwarder)**  
+- 🪟 **Windows 11 (Victim – Sysmon + Universal Forwarder)**  
 
 ---
 
