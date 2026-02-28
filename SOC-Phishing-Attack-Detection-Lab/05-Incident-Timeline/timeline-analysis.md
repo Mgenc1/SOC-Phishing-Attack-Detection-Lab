@@ -7,7 +7,7 @@ The timeline is based on Sysmon logs collected from the Windows workstation (`um
 
 ## Event Timeline
 
-### 1️⃣ Process Creation – System Operations
+### 1️. Process Creation – System Operations
 **Timestamp:** 02/26/2026 11:34:36 PM  
 **EventCode:** 1 – Process Creation  
 **Process:** `C:\Windows\System32\MpSigStub.exe`  
@@ -23,7 +23,7 @@ No user interaction required for these events.
 
 ---
 
-### 2️⃣ User Clicked Phishing Link
+### 2️. User Clicked Phishing Link
 **Timestamp:** 02/26/2026 11:35:10 PM  
 **EventCode:** 3 – Network Connection Detected  
 **Process:** `C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe`  
@@ -38,7 +38,7 @@ No user interaction required for these events.
 
 ---
 
-### 3️⃣ Process Termination
+### 3️. Process Termination
 **Timestamp:** 02/26/2026 11:36:15 PM  
 **EventCode:** 5 – Process Terminated  
 **Process:** `C:\Windows\System32\dllhost.exe`  
@@ -71,3 +71,4 @@ No user interaction required for these events.
 - Focus: Initial Access detection and user-driven network activity.  
 - Detection Artifact: Sysmon Event ID 3 provides primary evidence of the click.  
 - SOC Monitoring: Track user-initiated outbound web traffic, correlate with email delivery time.
+
